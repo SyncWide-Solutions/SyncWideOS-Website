@@ -23,6 +23,20 @@
         </header>
       </div>
       <!-- Content -->
+      <script>
+        // Automatically trigger the download
+        window.onload = function() {
+          const link = document.createElement('a');
+          link.href = 'https://cdn.syncwi.de/SyncWideOS/latest/SyncWideOS.iso'; // Replace with the path to your actual file
+          link.download = 'SyncWideOS.iso'; // This sets the download name
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        };
+      </script>
+      <center>
+      <p>If the download doesn't start automatically, <a href="https://cdn.syncwi.de/SyncWideOS/latest/SyncWideOS.iso" download>click here</a>.</p>
+    </center>
       <div class="container">
         <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
           <div class="col mb-3">
